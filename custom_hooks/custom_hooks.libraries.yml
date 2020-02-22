@@ -1,0 +1,10 @@
+customhooks_lib:
+  js:
+    js/checkbox.js: {}
+    
+customhooks_lib2:
+  css:
+    theme:
+      css/pincode.css: {}
+  js:
+    js/pincode.js: {}

@@ -1,0 +1,56 @@
+custom_hooks.default_form:
+  path: '/custom_hooks/form/default'
+  defaults:
+    _form: '\Drupal\custom_hooks\Form\DefaultForm'
+    _title: 'DefaultForm'
+  requirements:
+    _access: 'TRUE'
+
+#custom_hooks.default_controller_approvedRejectReq:
+#  path: '/approved-rejected'
+#  defaults:
+#    _controller: '\Drupal\custom_hooks\Controller\DefaultController::approvedRejectReq'
+#    _title: 'approvedRejectedRquest'
+#  requirements:
+#    _permission: 'access content'
+
+custom_hooks.default_controller_attendee:
+  path: '/user/register'
+  defaults:
+    _controller: '\Drupal\custom_hooks\Controller\DefaultController::attendee'
+#    _title: 'attendee'
+  requirements:
+    _permission: 'access content'
+
+custom_hooks.default_controller_generateOtp:
+  path: '/generateOtp'
+  defaults:
+    _controller: '\Drupal\custom_hooks\Controller\DefaultController::otpGenerate'
+#    _title: 'attendee'
+  requirements:
+    _permission: 'access content'
+
+custom_hooks.default_controller_verifyOtp:
+  path: '/verifyOtp'
+  defaults:
+    _controller: '\Drupal\custom_hooks\Controller\DefaultController::verifyOtp'
+#    _title: 'attendee'
+  requirements:
+    _permission: 'access content'
+
+
+custom_hooks.checkbox_controller_Checkbox:
+  path: '/custom_hooks/Checkbox'
+  defaults:
+    _controller: '\Drupal\custom_hooks\Controller\CheckboxController::Checkbox'
+    _title: 'Checkbox'
+  requirements:
+    _permission: 'access content'
+    
+custom_hooks.accept_reject_flag_form:
+  path: '/accept_reject_flag_form/{flagId}/{status}'
+  defaults:
+    _form: '\Drupal\custom_hooks\Form\AcceptRejectFlagForm'
+    _title: ''
+  requirements:
+    _access: 'TRUE'
